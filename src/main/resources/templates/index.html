@@ -4,7 +4,42 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+
+<script src="https://code.jquery.com/jquery-3.6.1.js"
+	integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+	crossorigin="anonymous"></script>
+<script src="/GoogleOTP.js"></script>
+
 <body>
 	index
+
+	<div>
+		<h1>QRCODE 가져오기</h1>
+		<form id="getQrCodeForm">
+			<div>
+				생성자 ID : <input id="username" name="username" value="" />
+			</div>
+			<button id="createQrCodeButton">생성</button>
+		</form>
+
+		<div id="qrCodeDiv">
+			<img id="qrCodeImg" src="">
+		</div>
+	</div>
+
+	<div>
+		<h1>QRCODE 인증 하기</h1>
+		<form id="vertifyOtp">
+			<div>
+				인증자 id <input id="otpUserId" name="otpUserId" value="" />
+			</div>
+			<div>
+				OTP CODE <input id="otpCode" name="otpCode" value="" />
+			</div>
+			<button id="verifyButton">인증</button>
+		</form>
+	</div>
+
+
 </body>
 </html>
